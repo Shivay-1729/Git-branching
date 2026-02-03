@@ -8,14 +8,15 @@ import java.util.concurrent.Future;
 
 public class ExcutorFramework {
     public static void main(String[] args) {
+
         ExecutorService executor = Executors.newFixedThreadPool(5);
     Callable<Integer> task1 = new Callable<>() {
         @Override
         public Integer call(){
             return 10;
-        }
-    };
 
+    }
+    };
      Callable<Integer> task2 = new Callable<>() {
         @Override
         public Integer call(){
@@ -50,5 +51,9 @@ public class ExcutorFramework {
                 e.printStackTrace();   
         executor.shutdown();
     }
+    
+
+
 }
 }
+
