@@ -32,7 +32,7 @@ public class ExcutorFramework {
             Integer result = future.get();
             System.out.println("Result from myCallable: " + result);
         } catch (Exception e) {
-            e.printStackTrace();
+            
         }
         executor.shutdown();
     }
